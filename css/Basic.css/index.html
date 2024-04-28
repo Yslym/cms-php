@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta name="viewport" content="user-scalable=yes, width=device-width, initial-scale=1.0" />
+
+	<title>Basic.css - Classless CSS Starter File</title>
+	<meta name="Description" content="Basic.css gives you basic CSS formatting and ability to make basic grids with only HTML5 syntax.">
+	<meta name="author" content="Vladimir Carrer">
+
+	<link rel="stylesheet" href="css/basic.css" type="text/css">
+
+	<style>
+		main,footer {
+			margin: 0 auto;
+			width: 60%;
+			text-align: left;
+			padding: 0 20px;
+		}
+
+		section>section {
+			color: #fff;
+			background-color: var(--c1);
+			padding: 15px;
+			margin: 10px 8px 10px 8px;
+			text-align: center;
+		}
+
+		@media (max-width: 481px) {
+			body {font-size: 18px}
+			main,footer {width: 98%}
+			section,article {flex:none; width:100%; margin-left: 0;}
+		}
+	</style>
+</head>
+
+<body>
+	<main>
+		<br />
+		<h1><a href="https://github.com/vladocar/Basic.css">Basic.css - Classless CSS Starter File</a></h1>
+
+		<section>
+			<article>
+				<img src="img/undraw_proud_coder_7ain.svg" alt="Lightweight" />
+				<h4>Lightweight</h4>
+				<p>1 Kb minified and gzipped. No CSS classes. </p>
+			</article>
+			<article>
+				<img src="img/font.svg" alt="Basic Typography" />
+				<h4>Basic Typography</h4>
+				<p>Essential typography with the System Font Stack.</p>
+			</article>
+			<article>
+				<img src="img/undraw_forms_78yw.svg" alt="Basic Forms" />
+				<h4>Basic Forms</h4>
+				<p>Vivamus non leo magna, quis imperdiet risus. </p>
+			</article>
+		</section>
+		<section>
+			<article>
+				<img src="img/undraw_color_palette_yamk.svg" alt="Dark Theme" />
+				<h4>Dark Theme</h4>
+				<p>Easy to customize color palette and dark theme. </p>
+			</article>
+			<article>
+				<img src="img/grid.svg" alt="Simple Grid" />
+				<h4>Flex Grid without classes</h4>
+				<p>By putting <b>section</b> tag inside <b>section</b> tag container you could make infinite flex grid.
+				</p>
+			</article>
+			<article>
+				<img src="img/undraw_design_notes_8dmv.svg" alt="Round Corners" />
+				<h4>Round corners</h4>
+				<p> Round corners --rc are set to 8px by default. Set --rc to 0px if you don't like rounded corners.</p>
+			</article>
+		</section>
+
+
+		<h4>Basic Typography</h4>
+		<p>
+			Suspendisse rhoncus, est ac sollicitudin viverra, leo orci sagittis massa, sed condimentum est tortor a lectus. Curabitur porta feugiat ullamcorper. Integer
+			lacinia mi id odio faucibus eget tincidunt nisl iaculis. Nam adipiscing hendrerit turpis, et porttitor felis
+			sollicitudin et. Donec dictum massa ac neque accumsan tempor. Cras aliquam, ipsum sit amet laoreet
+			hendrerit, purus <del>deleted text</del> sapien convallis dui, et porta leo ipsum ac nunc. Nullam ornare
+			porta dui ac semper. Cras aliquam laoreet hendrerit. Quisque vulputate dolor eget mi porta vel porta nisl
+			pretium. Vivamus non leo magna, quis imperdiet risus. Morbi tempor risus placerat tellus imperdiet
+			fringilla.
+		</p>
+
+		<blockquote>
+			<p> Why I am not one who was born in the possession of knowledge; I am & one who is fond of antiquity, and
+				earnest in seeking it there.</p>
+		</blockquote>
+
+		<p><cite><a href="/">Confucius, The Confucian Analects</a></cite>, (551 BC - 479 BC)</p>
+
+		<h4>Ordered lists</h4>
+
+		<ol>
+			<li>Unus</li>
+			<li>Duo</li>
+			<li>Tres</li>
+			<li>Quattuor</li>
+		</ol>
+
+		<h4>Unordered lists</h4>
+		<ul>
+			<li>Lorem ipsum dolor sit amet</li>
+			<li>Consectetur adipisicing elit</li>
+			<li>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</li>
+			<li>Ut enim ad minim veniam</li>
+		</ul>
+		<p>Lorem ipsum dolor sit amet,consectetur adipisicing elit, sed do eiusmod tempor incididunt
+			ut labore et dolore magna aliqua.</p>
+
+		<pre>body { font:0.8125em/1.618 sans-serif;
+background-color:#fff;
+color:#111;
+}</pre>
+
+		<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+			pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
+			anim id est laborum.</p>
+
+
+
+		<h4>Tables</h4>
+		<table summary="Jimi Hendrix albums">
+			<caption>Jimi Hendrix - albums</caption>
+			<thead>
+				<tr>
+					<th>Album</th>
+					<th>Year</th>
+					<th>Price</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>Are You Experienced </td>
+					<td>1967</td>
+					<td>$10.00</td>
+				</tr>
+				<tr>
+					<td>Axis: Bold as Love</td>
+					<td>1967</td>
+					<td>$12.00</td>
+				</tr>
+				<tr>
+					<td>Electric Ladyland</td>
+					<td>1968</td>
+					<td>$10.00</td>
+				</tr>
+				<tr>
+					<td>Band of Gypsys</td>
+					<td>1970</td>
+					<td>$12.00</td>
+				</tr>
+			</tbody>
+			<tfoot>
+				<tr>
+					<td>Album</td>
+					<td>Year</td>
+					<td>Price</td>
+				</tr>
+			</tfoot>
+		</table>
+
+
+
+		<h4>Infinity Grid</h4>
+
+
+		<section>
+			<section> 1 </section>
+			<section> 2 </section>
+			<section> 3 </section>
+		</section>
+		<section>
+			<section>1</section>
+			<section>2</section>
+			<section>3</section>
+			<section>4</section>
+		</section>
+		<section>
+			<section> 1 </section>
+			<section> 2 </section>
+			<section> 3 </section>
+			<section> 4 </section>
+			<section> 5 </section>
+		</section>
+
+
+		<h4>Forms</h4>
+		
+		<form>
+			<p>
+				<label for="Name">Name:</label><br />
+				<input id="Name" type="text" name="Name" />
+			</p>
+			<p>
+				<label for="City">City:</label><br />
+				<input id="City" type="text" name="City" />
+			</p>
+			<p>
+				<label for="Email">Email:</label><br />
+				<input id="Email" type="text" name="Email" />
+			</p>
+			<p>
+				<label for="Message">Message:</label><br />
+				<textarea id="Message" name="Message"></textarea>
+			</p>
+			<p>
+			<label for="lorem">Lorem ipsum</label><br />
+			<select id="lorem"  name="Lorem ipsum">
+				<option selected="selected" value="1">Lorem ipsum</option>
+				<option value="2">dolor sit amet</option>
+				<option value="3"> consectetuer adipiscing</option>
+				<option value="4">vitae diam</option>
+				<option value="5">Vestibulum ornare</option>
+			</select>
+			</p>
+			<p>
+				<label>Number:<br />
+				<input  type="radio" name="radioSet" value="uno" />Uno<br />
+				<input  type="radio" name="radioSet"  value="due" />Due<br />
+				<input type="radio" name="radioSet"  value="tre" />Tre<br />
+				</label>	
+			</p>
+			<p>
+				<button>Button </button>
+				<button>Hello World</button>
+				<input  type="button"  value="Input button" />
+				<input  type="submit"  value="Input submit" />
+				<input  type="reset"  value="Input reset" />
+
+			</p>
+
+			
+		</form>
+		
+		<p><b><a href="https://github.com/vladocar/Basic.css">Download the project on Github</a></b></p>
+
+		<hr>
+	</main>
+<footer>
+
+		<p>Made with ❤️ by <a href="https://github.com/vladocar">@vladocar</a> </p>
+</footer>
+
+
+	
+</body>
+
+</html>

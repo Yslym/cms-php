@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title> Lorem Ipsum Crash Test </title>
+	<meta name="author" content="Vladimir Carrer">
+
+
+
+
+	<link rel="stylesheet" href="css/basic.css" type="text/css">
+
+	<style>
+		main {
+			margin: 0 auto;
+			width: 82%;
+			text-align: left;
+			padding: 0 20px;
+		}
+		[style*="--c:"],section>section{
+        color: #fff;
+        background-color: #00bbeb;
+        padding: 15px;
+        margin: 10px 8px 10px 8px;
+        text-align: center;
+      }
+	</style>
+
+</head>
+
+<body>
+	<main>
+<h1>Simple Grid</h1>	
+	<section>
+		<section> 1 </section>
+		<section> 2 </section>
+		<section> 3 </section>
+	</section>
+	<section>
+		<section>1</section>
+		<section>2</section>
+		<section>3</section>
+		<section>4</section>
+	</section>
+	<section>
+		<section> 1 </section>
+		<section> 2 </section>
+		<section> 3 </section>
+		<section> 4 </section>
+		<section> 5 </section>
+	</section>
+<h2>Complex grid</h2>
+	<section>
+		<section> 1 </section>
+		<section> 2 </section>
+		<section> 3 </section>
+	</section>
+	<section>
+		<section style = "--c:2">Merge the first 2 columns</section>
+		<section>2</section>
+		<section>3</section>
+		<section>4</section>
+	</section>
+	<section>
+		<section> 1 </section>
+		<section style = "--c:3"> Merge 3 columns </section>
+		<section> 3 </section>
+	</section>
+	<section>
+		<section>1</section>
+		<section style = "--c:2">Merge 2</section>
+		<section style = "--c:3">Merge 3</section>
+		<section>4</section>
+		<section>5</section>
+		<section>6</section>
+		<section>7</section>
+	</section>
+	<section>
+		<div style = "--c:1"> 1 </div>
+		<div style = "--c:2"> Merge 2 columns</div>
+		<div style = "--c:1"> 3 </div>
+	</section>
+</main>
+</body>
+
+</html>
